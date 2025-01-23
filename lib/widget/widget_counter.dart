@@ -10,7 +10,8 @@ class CounterWidget extends StatelessWidget {
       listener: (context, state) {
         if (state.counter == 5) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Counter reached 5!')),
+            const SnackBar(content: Text('Counter reached 5!'),
+              duration: Duration(seconds: 2),),
           );
         }
       },
